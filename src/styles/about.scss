@@ -1,0 +1,295 @@
+@use "./variables" as *;
+
+.about-page {
+  background: $background;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  background: $dark;
+  color: $white;
+  padding: 90px 30px;
+}
+
+.about-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-hero-content span {
+  display: block;
+  margin-bottom: 15px;
+
+  color: $primary;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.about-hero-content h1 {
+  margin: 0 0 20px;
+
+  font-size: 48px;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #d1d5db;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.about-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 80px 30px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  padding-bottom: 70px;
+
+  border-bottom: 1px solid $border;
+}
+
+.about-section-heading span,
+.about-process-header span {
+  color: $primary-dark;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.about-section-heading h2,
+.about-process-header h2 {
+  margin: 10px 0 0;
+
+  color: $text-primary;
+
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.about-section-content p {
+  margin: 0 0 18px;
+
+  color: $text-secondary;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-section-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.about-features {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  padding: 70px 0;
+
+  border-bottom: 1px solid $border;
+}
+
+.about-feature-card {
+  padding: 30px;
+
+  background: $white;
+
+  border: 1px solid $border;
+
+  border-radius: $radius-lg;
+
+  box-shadow: $shadow-sm;
+
+  transition: 0.2s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: $shadow-md;
+}
+
+.about-feature-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  background: #fff7ed;
+
+  border-radius: 10px;
+
+  font-size: 23px;
+}
+
+.about-feature-card h3 {
+  margin: 0 0 10px;
+
+  color: $text-primary;
+
+  font-size: 18px;
+}
+
+.about-feature-card p {
+  margin: 0;
+
+  color: $text-secondary;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.about-process {
+  padding-top: 70px;
+}
+
+.about-process-header {
+  max-width: 600px;
+
+  margin-bottom: 40px;
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.process-item {
+  position: relative;
+
+  padding: 25px;
+
+  background: $white;
+
+  border: 1px solid $border;
+
+  border-radius: $radius-md;
+}
+
+.process-item > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: $primary;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.process-item h3 {
+  margin: 0 0 10px;
+
+  color: $text-primary;
+
+  font-size: 17px;
+}
+
+.process-item p {
+  margin: 0;
+
+  color: $text-secondary;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .about-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 65px 20px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .about-container {
+    padding: 60px 20px;
+  }
+
+  .about-section-heading h2,
+  .about-process-header h2 {
+    font-size: 28px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}

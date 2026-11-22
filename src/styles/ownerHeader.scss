@@ -1,0 +1,181 @@
+@use "./variables" as *;
+
+.owner-header {
+  height: 72px;
+
+  background: $white;
+
+  border-bottom: 1px solid $border;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 10;
+}
+
+.owner-header-container {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.owner-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: $dark;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.owner-logo span {
+  color: $primary;
+}
+
+.owner-logo small {
+  margin-left: 8px;
+
+  padding: 4px 7px;
+
+  background: #fff7ed;
+
+  color: $primary-dark;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+}
+
+/* =========================
+   RIGHT
+========================= */
+
+.owner-header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+.owner-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.owner-user-avatar {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: $primary;
+
+  color: $white;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.owner-user-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.owner-user-info strong {
+  color: $text-primary;
+
+  font-size: 13px;
+}
+
+.owner-user-info span {
+  color: $text-secondary;
+
+  font-size: 11px;
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+.owner-logout-btn {
+  padding: 9px 15px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 7px;
+
+  background: $white;
+
+  color: #dc2626;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.owner-logout-btn:hover {
+  background: #fee2e2;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .owner-header-container {
+    padding: 0 15px;
+  }
+
+  .owner-logo {
+    font-size: 21px;
+  }
+
+  .owner-logo small {
+    display: none;
+  }
+
+  .owner-user-info {
+    display: none;
+  }
+
+  .owner-header-right {
+    gap: 10px;
+  }
+}

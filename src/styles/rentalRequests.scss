@@ -1,0 +1,275 @@
+.rental-requests-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  padding: 45px 20px 60px;
+}
+
+.rental-requests-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.rental-requests-header {
+  margin-bottom: 30px;
+}
+
+.page-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.rental-requests-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 36px;
+}
+
+.rental-requests-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Summary */
+
+.request-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.summary-card strong {
+  color: #111827;
+  font-size: 28px;
+}
+
+.summary-card.pending {
+  border-left: 4px solid #f59e0b;
+}
+
+.summary-card.approved {
+  border-left: 4px solid #16a34a;
+}
+
+.summary-card.rejected {
+  border-left: 4px solid #dc2626;
+}
+
+/* Request Card */
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.request-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Card Header */
+
+.request-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.request-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.request-card-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 22px;
+}
+
+/* Status */
+
+.request-status {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.request-status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.request-status.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.request-status.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Details */
+
+.request-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 25px 0;
+}
+
+.detail-section h3 {
+  margin: 0 0 15px;
+  color: #111827;
+  font-size: 16px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 9px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-item span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.detail-item strong {
+  color: #111827;
+  font-size: 14px;
+  text-align: right;
+}
+
+.detail-item.total {
+  margin-top: 8px;
+  border-bottom: none;
+}
+
+.detail-item.total strong {
+  color: #f59e0b;
+  font-size: 18px;
+}
+
+/* Actions */
+
+.request-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.request-actions button {
+  min-width: 110px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.approve-btn {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.approve-btn:hover {
+  background: #15803d;
+}
+
+.reject-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.reject-btn:hover {
+  background: #fecaca;
+}
+
+.action-message {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .request-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .request-details {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rental-requests-page {
+    padding: 30px 15px;
+  }
+
+  .rental-requests-header h1 {
+    font-size: 28px;
+  }
+
+  .request-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .request-card {
+    padding: 20px;
+  }
+
+  .request-card-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .request-actions {
+    flex-direction: column-reverse;
+  }
+
+  .request-actions button {
+    width: 100%;
+  }
+}

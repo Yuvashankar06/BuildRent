@@ -1,0 +1,66 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Pending */
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Approved */
+
+.status-badge.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Rejected */
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Rented */
+
+.status-badge.rented {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Returned */
+
+.status-badge.returned {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Completed */
+
+.status-badge.completed {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Available */
+
+.status-badge.available {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Unavailable */
+
+.status-badge.unavailable {
+  background: #fee2e2;
+  color: #b91c1c;
+}

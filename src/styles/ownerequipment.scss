@@ -1,0 +1,206 @@
+@use "./variables" as *;
+
+.owner-equipment-page {
+  padding: 50px 0 80px;
+}
+
+.owner-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 36px;
+    margin: 7px 0;
+  }
+
+  p {
+    color: $text-secondary;
+  }
+}
+
+.page-label {
+  color: $primary-dark;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.equipment-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+
+  strong {
+    font-size: 22px;
+  }
+
+  span {
+    color: $text-secondary;
+    font-size: 14px;
+  }
+}
+
+.owner-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.owner-equipment-card {
+  background: $white;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-3px);
+  }
+}
+
+.owner-equipment-image {
+  height: 240px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.equipment-status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.equipment-status.available {
+  background: #dcfce7;
+  color: $success;
+}
+
+.equipment-status.unavailable {
+  background: #fee2e2;
+  color: $danger;
+}
+
+.owner-equipment-content {
+  padding: 22px;
+
+  h2 {
+    font-size: 21px;
+    margin: 7px 0 10px;
+  }
+
+  > p {
+    color: $text-secondary;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+.equipment-category {
+  color: $primary-dark;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.owner-equipment-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  margin-bottom: 22px;
+
+  div {
+    background: $background;
+    padding: 12px;
+    border-radius: $radius-sm;
+  }
+
+  span {
+    display: block;
+    color: $text-secondary;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  strong {
+    font-size: 13px;
+  }
+
+  small {
+    color: $text-secondary;
+    font-weight: 400;
+  }
+}
+
+.equipment-actions {
+  display: flex;
+  gap: 10px;
+
+  button,
+  a {
+    flex: 1;
+    padding: 10px;
+    border-radius: $radius-sm;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.edit-btn {
+  border: 1px solid $primary;
+  color: $primary-dark;
+
+  &:hover {
+    background: #fffbeb;
+  }
+}
+
+.delete-btn {
+  border: 1px solid #fecaca;
+  background: white;
+  color: $danger;
+
+  &:hover {
+    background: #fef2f2;
+  }
+}
+
+@media (max-width: 850px) {
+  .owner-equipment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .owner-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .owner-equipment-details {
+    grid-template-columns: 1fr;
+  }
+}

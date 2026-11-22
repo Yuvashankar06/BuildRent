@@ -1,0 +1,214 @@
+{
+  "equipment": [
+    {
+      "id": "1",
+      "name": "Excavator ZX200",
+      "category": "Excavator",
+      "description": "Heavy-duty excavator suitable for large construction projects.",
+      "price": 5000,
+      "location": "Mumbai",
+      "available": true,
+      "image": "/Images/crane.jpeg",
+      "specifications": {
+        "model": "ZX200",
+        "year": 2024,
+        "fuel": "Diesel",
+        "weight": "20 Ton"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Tower Crane TC500",
+      "category": "Crane",
+      "description": "High-capacity tower crane for commercial construction projects.",
+      "price": 7000,
+      "location": "Thane",
+      "available": true,
+      "image": "/Images/excavator.jpeg",
+      "specifications": {
+        "model": "TC500",
+        "year": 2023,
+        "fuel": "Electric",
+        "weight": "15 Ton"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Wheel Loader WL300",
+      "category": "Loader",
+      "description": "Powerful wheel loader designed for material handling.",
+      "price": 4000,
+      "location": "Navi Mumbai",
+      "available": false,
+      "image": "/Images/loader.jpeg",
+      "specifications": {
+        "model": "WL300",
+        "year": 2024,
+        "fuel": "Diesel",
+        "weight": "12 Ton"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Bulldozer BD400",
+      "category": "Bulldozer",
+      "description": "Heavy-duty bulldozer for land clearing and soil pushing.",
+      "price": 6000,
+      "location": "Pune",
+      "available": true,
+      "image": "https://images.tractorjunction.com/Infrajunction-prod/4_case_1650_m_2d46e64b79.webp?format=webp&quality=40",
+      "specifications": {
+        "model": "BD400",
+        "year": 2023,
+        "fuel": "Diesel",
+        "weight": "18 Ton"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Road Roller RR250",
+      "category": "Road Roller",
+      "description": "Road roller for compacting soil and asphalt.",
+      "price": 3500,
+      "location": "Nashik",
+      "available": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZteKMmcy9zoRg9fWJne_1WVUfk0qodhaQLdVMtCLBg&s=10",
+      "specifications": {
+        "model": "RR250",
+        "year": 2024,
+        "fuel": "Diesel",
+        "weight": "10 Ton"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Backhoe Loader BH300",
+      "category": "Backhoe Loader",
+      "description": "Versatile machine for digging, trenching, and loading materials.",
+      "price": 4500,
+      "location": "Thane",
+      "available": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4ss4yBqXbiQTrG5xM0jQTmCdQ22yco-y9TJwpcylYXnoKpoBNSigHyQ&s=10",
+      "specifications": {
+        "model": "BH300",
+        "year": 2025,
+        "fuel": "Diesel",
+        "weight": "9 Ton"
+      }
+    },
+    {
+      "name": "Concrete Roller",
+      "category": "Concrete",
+      "description": "There is nothing special do not rent this",
+      "price": 9000,
+      "location": "Mumbai",
+      "model": "Z40",
+      "year": 2020,
+      "fuel": "Diesel",
+      "weight": "50 ton",
+      "image": "https://i0.wp.com/engineeringcivil.org/wp-content/uploads/2018/03/Roller-compacted-concrete-Rapid-International.jpg?resize=616%2C461&ssl=1",
+      "available": true,
+      "specifications": {
+        "model": "Z40",
+        "year": 2020,
+        "fuel": "Diesel",
+        "weight": "50 ton"
+      },
+      "id": "vVX871LkQu0"
+    },
+    {
+      "name": "Hydraulic Excavator",
+      "category": "Excavator",
+      "description": "Heavy-duty hydraulic excavator suitable for earthmoving, trench digging, foundation work, and large construction projects.",
+      "price": 10000,
+      "location": "Thane, Maharashtra",
+      "model": "Tata Hitachi X200",
+      "year": "2024",
+      "fuel": "Diesel",
+      "weight": "20000 kg",
+      "image": "https://images.openai.com/static-rsc-4/O6dgFLaLXY8_xUIMMlSoUtmUJ3NpFl8eJCV8gGap9y0rDud9VOJmA4e5MxE8bDV7ZUvZk3GUOXecChp3KZD8TEWFArNESiWdrMSx4RDXF_ubPjcUlfH51eZ39VdyaXTEGOHHV4AfZNa3hrfKDAmMLt9sSZKpOyPDUY9kwe8HQJcwueW-XeWEVX_PLR8TqkD-?purpose=fullsize",
+      "available": false,
+      "specifications": {
+        "model": "Tata Hitachi X200",
+        "year": 2024,
+        "fuel": "Diesel",
+        "weight": "20000 kg"
+      },
+      "id": "kqBMTUYs580"
+    }
+  ],
+  "rentals": [
+    {
+      "equipmentId": "5",
+      "equipmentName": "Road Roller RR250",
+      "equipmentImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZteKMmcy9zoRg9fWJne_1WVUfk0qodhaQLdVMtCLBg&s=10",
+      "equipmentLocation": "Nashik",
+      "pricePerDay": 3500,
+      "customerId": 1790689660479,
+      "customerName": "Yuva",
+      "customerEmail": "yuva@gmail.com",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-16",
+      "days": 3,
+      "totalAmount": 10500,
+      "status": "Completed",
+      "createdAt": "2026-10-13T14:52:31.543Z",
+      "id": "VE8SYKO7rE0",
+      "returnedAt": "2026-10-13T15:20:29.544Z"
+    },
+    {
+      "equipmentId": "vVX871LkQu0",
+      "equipmentName": "Concrete Roller",
+      "equipmentImage": "https://i0.wp.com/engineeringcivil.org/wp-content/uploads/2018/03/Roller-compacted-concrete-Rapid-International.jpg?resize=616%2C461&ssl=1",
+      "equipmentLocation": "Mumbai",
+      "pricePerDay": 9000,
+      "customerId": 1790689660479,
+      "customerName": "Yuva",
+      "customerEmail": "yuva@gmail.com",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-20",
+      "days": 6,
+      "totalAmount": 54000,
+      "status": "Rejected",
+      "createdAt": "2026-10-13T14:59:54.639Z",
+      "id": "eLsmr2CvVGo"
+    },
+    {
+      "equipmentId": "6",
+      "equipmentName": "Backhoe Loader BH300",
+      "equipmentImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4ss4yBqXbiQTrG5xM0jQTmCdQ22yco-y9TJwpcylYXnoKpoBNSigHyQ&s=10",
+      "equipmentLocation": "Thane",
+      "pricePerDay": 4500,
+      "customerId": 1790689660479,
+      "customerName": "Yuva",
+      "customerEmail": "yuva@gmail.com",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-29",
+      "days": 2,
+      "totalAmount": 9000,
+      "status": "Completed",
+      "createdAt": "2026-10-13T15:19:33.697Z",
+      "id": "mUv7uksPSco",
+      "returnedAt": "2026-10-13T17:12:10.533Z"
+    },
+    {
+      "equipmentId": "2",
+      "equipmentName": "Tower Crane TC500",
+      "equipmentImage": "/Images/excavator.jpeg",
+      "equipmentLocation": "Thane",
+      "pricePerDay": 7000,
+      "customerId": 1791913193502,
+      "customerName": "User",
+      "customerEmail": "user@gmail.com",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-31",
+      "days": 9,
+      "totalAmount": 63000,
+      "status": "Completed",
+      "createdAt": "2026-10-13T17:40:38.303Z",
+      "id": "ldoFxGkUq_g",
+      "returnedAt": "2026-10-13T17:44:17.601Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

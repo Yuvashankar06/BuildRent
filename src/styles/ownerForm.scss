@@ -1,0 +1,271 @@
+/* ================================
+   OWNER EQUIPMENT FORM
+================================ */
+
+.equipment-form-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  padding: 40px 20px 60px;
+  box-sizing: border-box;
+}
+
+.equipment-form-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Back Link */
+
+.equipment-form-container > a:first-child {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.equipment-form-container > a:first-child:hover {
+  color: #f59e0b;
+}
+
+/* Header */
+
+.equipment-form-container .page-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.equipment-form-container h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.equipment-form-container > p {
+  margin: 0 0 35px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Section Headings */
+
+.equipment-form-container h3 {
+  margin: 35px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #111827;
+  font-size: 21px;
+}
+
+/* Form */
+
+.equipment-form-container form {
+  width: 100%;
+}
+
+/* Form Group */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+/* Two Column Layout */
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Image Help Text */
+
+.form-group small {
+  display: block;
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Checkbox */
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #f59e0b;
+  cursor: pointer;
+}
+
+.form-checkbox label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Buttons */
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Cancel Link */
+
+.form-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 46px;
+  padding: 0 20px;
+  border-radius: 8px;
+  color: #374151;
+  background: #f3f4f6;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.form-actions a:hover {
+  background: #e5e7eb;
+}
+
+/* Submit Button */
+
+.form-actions button {
+  min-width: 160px;
+  height: 46px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 8px;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-actions button:hover {
+  background: #d97706;
+  transform: translateY(-1px);
+}
+
+.form-actions button:active {
+  transform: translateY(0);
+}
+
+/* ================================
+   EDIT PAGE BUTTONS
+================================ */
+
+.equipment-form-page button {
+  font-family: inherit;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .equipment-form-page {
+    padding: 25px 15px 40px;
+  }
+
+  .equipment-form-container {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .equipment-form-container h1 {
+    font-size: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .form-actions a,
+  .form-actions button {
+    width: 100%;
+  }
+}
